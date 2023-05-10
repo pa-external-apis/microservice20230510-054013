@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Web Application</title>
+</head>
+<body>
+	<h1>Welcome to My Web Application</h1>
+	<form method="POST">
+		<label for="input_data">Enter some data:</label>
+		<input type="text" id="input_data" name="input_data">
+		<button type="submit">Submit</button>
+	</form>
+	{% if output_data %}
+		<h2>Output:</h2>
+		<p>{{ output_data }}</p>
+	{% endif %}
+</body>
+</html>
